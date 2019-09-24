@@ -6,9 +6,9 @@
 
 <nav th:replace="fragments :: navigation"></nav>
 
-<ul th:each="category : ${Categories}">
+<ul style="margin-bottom:3%">
 
-    <li th:text="${category.name}"></li>
+    <li th:each="category : ${Categories}" th:text="${category.name}"></li>
 
 </ul>
 
